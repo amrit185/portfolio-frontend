@@ -1,4 +1,4 @@
-// src/app/skills/page.js
+
 async function getSkills() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/skills`, { cache: 'no-store' });
   return res.ok ? res.json() : [];
@@ -7,7 +7,7 @@ async function getSkills() {
 export default async function SkillsPage() {
   const skills = await getSkills();
 
-  // Group skills by category automatically
+
   const groupedSkills = skills.reduce((acc, skill) => {
     if (!acc[skill.category]) acc[skill.category] = [];
     acc[skill.category].push(skill);
