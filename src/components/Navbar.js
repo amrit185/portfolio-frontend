@@ -1,4 +1,4 @@
-// src/components/Navbar.js
+
 import Link from 'next/link';
 
 export default function Navbar() {
@@ -7,7 +7,7 @@ const navLinks = [
     { name: 'Projects', path: '/projects' },
     { name: 'Skills', path: '/skills' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' }, // <-- Add this!
+    { name: 'Contact', path: '/contact' }, 
   ];
 
   return (
