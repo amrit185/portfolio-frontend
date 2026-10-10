@@ -1,4 +1,4 @@
-// src/app/projects/page.js
+
 async function getProjects() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/projects`, { cache: 'no-store' });
   return res.ok ? res.json() : [];
