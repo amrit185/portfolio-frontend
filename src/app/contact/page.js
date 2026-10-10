@@ -1,5 +1,5 @@
-// src/app/contact/page.js
-"use client"; // Required for forms and state in Next.js App Router
+
+"use client"; 
 
 import { useState } from 'react';
 
@@ -22,7 +22,7 @@ export default function ContactPage() {
 
       if (res.ok) {
         setStatus({ loading: false, success: true, error: '' });
-        setFormData({ name: '', email: '', message: '' }); // Clear form
+        setFormData({ name: '', email: '', message: '' }); 
       } else {
         setStatus({ loading: false, success: false, error: data.message || 'Something went wrong.' });
       }
